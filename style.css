@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 15px;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #2d3248;
+  background-color: #19a2ae;
+  background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: left -40vw top -40vw, left 50vw top 50vh;
+  background-size: 80vw 80vw, 80vw 80vw;
+}
+
+.container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.card-wrapper {
+  width: 350px;
+  margin: 0 auto;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 3px rgba(106, 111, 129, 0.5);
+          box-shadow: 0 0 3px rgba(106, 111, 129, 0.5);
+}
+
+.card-header {
+  height: 130px;
+  background-image: url("./images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.card-header img {
+  border-radius: 50%;
+  position: absolute;
+  top: calc(100% - 48px);
+  left: calc(50% - 48px);
+  border: 6px solid white;
+}
+
+.card-content {
+  padding-top: 6rem;
+}
+
+.card-content h1 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.profile-age {
+  color: #6a6f81;
+  font-weight: normal;
+  font-size: 1.3rem;
+  padding-left: .4rem;
+}
+
+.profile-city {
+  color: #6a6f81;
+  margin-bottom: 1.5rem;
+}
+
+.profile-stats {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 0;
+  color: #6a6f81;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.stat-number {
+  font-weight: bold;
+  color: #2d3248;
+  font-size: 1.2rem;
+  padding-bottom: .4rem;
+}
+
+.stat-caption {
+  font-size: .6rem;
+  letter-spacing: 2px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 3em;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (max-aspect-ratio: 1 / 1) {
+  html {
+    background-size: 80vh 80vh, 80vh 80vh;
+    background-position: left -40vh top -40vh, left 50vw top 50vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
